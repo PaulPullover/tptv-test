@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Das Erste HD" tvg-id="ARD.de" group-title="Entertain" tvg-logo="https://raw.githubusercontent.com/jnk22/entertain-iptv/master/logos/tv/daserstehd.png",Das Erste HD
+rtp://87.141.215.251@232.0.20.35:10000 -vcodec copy -acodec copy -metadata service_name=Das\ Erste\ HD -metadata service_provider=Entertain -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
