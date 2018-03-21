@@ -1,7 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="Das Erste HD" tvg-id="ARD.de" group-title="Entertain" tvg-logo="https://raw.githubusercontent.com/jnk22/entertain-iptv/master/logos/tv/daserstehd.png",Das Erste HD
 pipe:///usr/bin/ffmpeg -loglevel fatal -i rtp://@239.35.10.1:10000 -vcodec copy -acodec copy -metadata service_name=Das\ Erste\ HD -metadata service_provider=Entertain -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
-
+#EXTINF:-1 tvg-name="Das Erste" tvg-id="ARD.de" group-title="Entertain" tvg-logo="https://raw.githubusercontent.com/jnk22/entertain-iptv/master/logos/tv/daserste.png",Das Erste
+pipe:///usr/bin/ffmpeg -loglevel fatal -i rtp://@239.35.10.4:10000 -vcodec copy -acodec copy -metadata service_name=Das\ Erste -metadata service_provider=Entertain -mpegts_service_type advanced_codec_digital_sdtv -f mpegts pipe:1
 #EXTINF:-1 tvg-name="ZDF HD" tvg-id="ZDF.de" group-title="Entertain" tvg-logo="https://raw.githubusercontent.com/jnk22/entertain-iptv/master/logos/tv/zdfhd.png",ZDF HD
-rtp://87.141.215.251@232.0.20.35:10000 -vcodec copy -acodec copy -metadata service_name=ZDF\ HD -metadata service_provider=Entertain -mpegts_service_type advanced_codec_digital_hdtv -f mpegts:1
-
+pipe:///usr/bin/ffmpeg -loglevel fatal -i rtp://@239.35.10.2:10000 -vcodec copy -acodec copy -metadata service_name=ZDF\ HD -metadata service_provider=Entertain -mpegts_service_type advanced_codec_digital_hdtv -f mpegts pipe:1
+#EXTINF:-1 tvg-name="ZDF" tvg-id="ZDF.de" group-title="Entertain" tvg-logo="https://raw.githubusercontent.com/jnk22/entertain-iptv/master/logos/tv/zdf.png",ZDF
+pipe:///usr/bin/ffmpeg -loglevel fatal -i rtp://@239.35.10.5:10000 -vcodec copy -acodec copy -metadata service_name=ZDF -metadata service_provider=Entertain -mpegts_service_type advanced_codec_digital_sdtv -f mpegts pipe:1
+#EXTINF:-1 tvg-name="RTL" tvg-id="RTL.de" group-title="Entertain" tvg-logo="https://raw.githubusercontent.com/jnk22/entertain-iptv/master/logos/tv/rtl.png",RTL
+pipe:///usr/bin/ffmpeg -loglevel fatal -i rtp://@239.35.20.10:10000 -vcodec copy -acodec copy -metadata service_name=RTL -metadata service_provider=Entertain -mpegts_service_type advanced_codec_digital_sdtv -f mpegts pipe:1
